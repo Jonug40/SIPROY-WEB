@@ -1,0 +1,85 @@
+/*==================================================
+ESPECIALIDADES
+==================================================*/
+
+#specialties{
+
+    margin-top:-70px;
+
+    position:relative;
+
+    z-index:10;
+
+}
+
+.specialty-card{
+
+    background:#FFFFFF;
+
+    border-radius:22px;
+
+    padding:35px 28px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+    transition:all .35s ease;
+
+    height:100%;
+
+}
+
+.specialty-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.18);
+
+}
+
+.specialty-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:20px;
+
+    background:#F5B21A;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    color:#071C36;
+
+}
+
+.specialty-card h4{
+
+    font-weight:700;
+
+    color:#071C36;
+
+    margin-bottom:15px;
+
+}
+
+.specialty-card p{
+
+    color:#6B7280;
+
+    line-height:1.7;
+
+    margin:0;
+
+}

@@ -1,8 +1,10 @@
-/*=========================================
+/*==================================================
 HERO
-=========================================*/
+==================================================*/
 
 #hero{
+
+    position:relative;
 
     min-height:100vh;
 
@@ -10,19 +12,19 @@ HERO
 
     align-items:center;
 
-    position:relative;
-
     overflow:hidden;
 
     background:
-        radial-gradient(circle at top left,
-        rgba(29,94,168,.20),
-        transparent 35%),
 
         linear-gradient(
-        135deg,
-        #071C36 0%,
-        #0D3B73 100%);
+        rgba(7,28,54,.88),
+        rgba(7,28,54,.92)),
+
+        url("../img/background/circuitos.webp");
+
+    background-size:cover;
+
+    background-position:center;
 
     color:white;
 
@@ -34,51 +36,57 @@ HERO
 
     inset:0;
 
-    background:url("../img/background/circuitos.png");
-
-    opacity:.05;
+    background:radial-gradient(circle at right,
+    rgba(245,178,26,.08),
+    transparent 45%);
 
 }
+
+/*==========================
+TEXTO
+==========================*/
 
 .hero-left{
 
     position:relative;
 
-    z-index:2;
+    z-index:5;
 
 }
 
-.hero-top{
+.hero-tag{
 
     color:#F5B21A;
+
+    letter-spacing:4px;
 
     font-size:15px;
 
     font-weight:700;
 
-    letter-spacing:3px;
-
 }
 
-#hero h1{
+.hero-left h1{
 
-    font-size:78px;
-
-    line-height:.95;
+    font-size:clamp(3.5rem,5vw,5rem);
 
     font-weight:800;
 
-    margin:25px 0;
+    line-height:.92;
+
+    margin-top:25px;
 
 }
 
-#hero h1 span{
+.hero-left h1 span{
 
     color:#F5B21A;
 
 }
 
-#hero p{
+.hero-left p{
+
+    margin-top:35px;
 
     color:#D7DEE8;
 
@@ -86,9 +94,13 @@ HERO
 
     line-height:1.8;
 
-    margin-top:25px;
+    max-width:520px;
 
 }
+
+/*==========================
+BOTONES
+==========================*/
 
 .hero-buttons{
 
@@ -100,34 +112,62 @@ HERO
 
 }
 
+.hero-buttons .btn{
+
+    padding:16px 32px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+}
+
+.hero-buttons i{
+
+    margin-right:8px;
+
+}
+
+/*==========================
+IMAGEN
+==========================*/
+
+.hero-right{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
 .hero-card{
 
     position:relative;
+
+    width:100%;
+
+    max-width:720px;
 
     border-radius:28px;
 
     overflow:hidden;
 
-    box-shadow:0 30px 60px rgba(0,0,0,.35);
+    border:1px solid rgba(255,255,255,.12);
 
-    transition:.45s;
+    background:rgba(255,255,255,.03);
 
-}
+    backdrop-filter:blur(8px);
 
-.hero-card::before{
+    box-shadow:
+        0 35px 70px rgba(0,0,0,.40);
 
-    content:"";
+    transition:all .40s ease;
 
-    position:absolute;
-
-    inset:0;
-
-    border:2px solid rgba(245,178,26,.40);
-
-    border-radius:28px;
-
-    pointer-events:none;
-
+    animation:float 6s ease-in-out infinite;
 }
 
 .hero-card img{
@@ -136,10 +176,157 @@ HERO
 
     display:block;
 
+    transition:transform .45s ease;
+
 }
 
 .hero-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 45px 90px rgba(0,0,0,.45);
+
+}
+
+.hero-card:hover img{
+
+    transform:scale(1.03);
+
+}
+
+/*==========================
+GLOW
+==========================*/
+
+.hero-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    background:#F5B21A;
+
+    opacity:.22;
+
+    filter:blur(100px);
+
+    left:-70px;
+
+    bottom:-70px;
+
+    z-index:0;
+
+}
+
+.hero-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    background:#1D5EA8;
+
+    opacity:.28;
+
+    filter:blur(130px);
+
+    right:-100px;
+
+    top:-90px;
+
+    z-index:0;
+
+}
+
+/*==========================
+FLOATING CARDS
+==========================*/
+
+.floating-card{
+
+    position:absolute;
+
+    background:rgba(255,255,255,.95);
+
+    color:#071C36;
+
+    border-radius:16px;
+
+    padding:14px 20px;
+
+    font-weight:600;
+
+    font-size:15px;
+
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    z-index:5;
+
+}
+
+.floating-card i{
+
+    color:#F5B21A;
+
+}
+
+.card-cloud{
+
+    top:30px;
+
+    left:-30px;
+
+}
+
+.card-security{
+
+    top:45%;
+
+    right:-20px;
+
+}
+
+.card-network{
+
+    bottom:25px;
+
+    left:40px;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
 
 }

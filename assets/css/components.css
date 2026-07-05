@@ -1,0 +1,112 @@
+/*==================================================
+COMPONENTES SIPROY
+Versión 1.0
+==================================================*/
+
+
+/*=============================
+TÍTULOS
+=============================*/
+
+.section-title{
+
+    font-size:48px;
+
+    font-weight:800;
+
+    color:#071C36;
+
+    margin-bottom:20px;
+
+}
+
+.section-subtitle{
+
+    color:#F5B21A;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:15px;
+
+}
+
+
+/*=============================
+CARDS
+=============================*/
+
+.card-siproy{
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card-siproy:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 35px 60px rgba(0,0,0,.15);
+
+}
+
+
+/*=============================
+ICONOS
+=============================*/
+
+.icon-box{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#F5B21A;
+
+    color:#071C36;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+
+/*=============================
+BADGE
+=============================*/
+
+.badge-siproy{
+
+    display:inline-block;
+
+    background:#EEF5FF;
+
+    color:#0D3B73;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
