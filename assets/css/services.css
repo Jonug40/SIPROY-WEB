@@ -32,6 +32,10 @@ CARD
 
     position:relative;
 
+    display:flex;
+
+    flex-direction:column;
+
     background:#FFFFFF;
 
     border-radius:24px;
@@ -92,14 +96,14 @@ CARD
 
 .service-body{
 
-    padding:36px;
-
     display:flex;
 
     flex-direction:column;
 
-    height:100%;
-    
+    flex:1;
+
+    padding:36px;
+
 }
 
 .service-body h3{
@@ -156,11 +160,13 @@ CARD
 
     align-items:center;
 
+    justify-content:center;
+
     gap:10px;
 
-    padding:12px 22px;
+    padding:14px 26px;
 
-    border-radius:40px;
+    border-radius:50px;
 
     background:#EEF5FF;
 
@@ -172,6 +178,10 @@ CARD
 
     transition:all .35s ease;
 
+    margin-top:30px;
+
+    width:max-content;
+
 }
 
 .service-link:hover{
@@ -180,7 +190,7 @@ CARD
 
     color:#071C36;
 
-    transform:translateX(6px);
+    transform:translateX(-3px);
 
 }
 
