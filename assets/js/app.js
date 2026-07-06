@@ -36,15 +36,17 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await loadComponent("hero-container", "components/hero.html");
 
+    await loadComponent("navbar-container", "components/navbar.html");
+
     await loadComponent("specialties-container", "components/specialties.html");
 
     await loadComponent("services-container", "components/services.html");
 
     await loadComponent("about-container", "components/about.html");
 
-   // await loadComponent("clients-container", "components/clients.html");
+    await loadComponent("clients-container", "components/clients.html");
 
-   // await loadComponent("partners-container", "components/partners.html");
+    await loadComponent("partners-container", "components/partners.html");
 
    // await loadComponent("values-container", "components/values.html");
 

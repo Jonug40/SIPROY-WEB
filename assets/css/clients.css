@@ -1,0 +1,219 @@
+/*==================================================
+CLIENTES PREMIUM
+==================================================*/
+
+#clients{
+
+    padding:120px 0;
+
+    background:#F8FAFD;
+
+    position:relative;
+
+}
+
+/*=========================================
+CABECERA
+=========================================*/
+
+#clients .section-title{
+
+    font-size:54px;
+
+    font-weight:800;
+
+    color:#071C36;
+
+    line-height:1.15;
+
+    margin:20px 0;
+
+}
+
+#clients .section-description{
+
+    max-width:780px;
+
+    margin:auto;
+
+    color:#5E6775;
+
+    font-size:19px;
+
+    line-height:1.9;
+
+}
+
+/*=========================================
+VITRINA
+=========================================*/
+
+.clients-grid{
+
+    margin-top:90px;
+
+    background:#FFFFFF;
+
+    border-radius:30px;
+
+    padding:60px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:40px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
+
+    border:1px solid rgba(13,59,115,.06);
+
+}
+
+/*=========================================
+LOGOS
+=========================================*/
+
+.client-logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:150px;
+
+    transition:.35s;
+
+}
+
+.client-logo img{
+
+    max-width:210px;
+
+    max-height:90px;
+
+    width:auto;
+
+    filter:grayscale(100%);
+
+    opacity:.82;
+
+    transition:.40s;
+
+}
+
+.client-logo:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.client-logo:hover img{
+
+    filter:none;
+
+    opacity:1;
+
+    transform:scale(1.05);
+
+}
+
+/*=========================================
+MENSAJE
+=========================================*/
+
+.clients-message{
+
+    margin-top:70px;
+
+    text-align:center;
+
+}
+
+.clients-message i{
+
+    font-size:48px;
+
+    color:#F5B21A;
+
+}
+
+.clients-message p{
+
+    margin:30px auto;
+
+    max-width:780px;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#5E6775;
+
+    font-style:italic;
+
+}
+
+.clients-message h5{
+
+    color:#071C36;
+
+    font-weight:700;
+
+}
+
+/*=========================================
+RESPONSIVE
+=========================================*/
+
+@media(max-width:991px){
+
+    .clients-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        padding:40px;
+
+    }
+
+    #clients .section-title{
+
+        font-size:40px;
+
+    }
+
+}
+
+@media(max-width:767px){
+
+    #clients{
+
+        padding:80px 0;
+
+    }
+
+    .clients-grid{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+        padding:35px;
+
+    }
+
+    #clients .section-title{
+
+        font-size:34px;
+
+    }
+
+    .clients-message p{
+
+        font-size:18px;
+
+    }
+
+}

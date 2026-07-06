@@ -1,0 +1,294 @@
+/*==================================================
+PARTNERS PREMIUM
+==================================================*/
+
+#partners{
+
+    padding:120px 0;
+
+    background:#FFFFFF;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/*=========================================
+CABECERA
+=========================================*/
+
+#partners .section-title{
+
+    font-size:54px;
+
+    font-weight:800;
+
+    color:#071C36;
+
+    line-height:1.15;
+
+    margin:20px 0;
+
+}
+
+#partners .section-description{
+
+    max-width:760px;
+
+    margin:auto;
+
+    font-size:19px;
+
+    color:#5E6775;
+
+    line-height:1.9;
+
+}
+
+#partners .section-description::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:3px;
+
+    margin:35px auto 0;
+
+    border-radius:50px;
+
+    background:#F5B21A;
+
+}
+
+
+/*=========================================
+SLIDER
+=========================================*/
+
+.partners-slider{
+
+    position:relative;
+
+    margin-top:100px;
+
+    overflow:hidden;
+
+}
+
+/* Degradados laterales */
+
+.partners-slider::before,
+
+.partners-slider::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    width:140px;
+
+    height:100%;
+
+    z-index:5;
+
+    pointer-events:none;
+
+}
+
+.partners-slider::before{
+
+    left:0;
+
+    background:linear-gradient(
+        to right,
+        #FFFFFF,
+        rgba(255,255,255,0)
+    );
+
+}
+
+.partners-slider::after{
+
+    right:0;
+
+    background:linear-gradient(
+        to left,
+        #FFFFFF,
+        rgba(255,255,255,0)
+    );
+
+}
+
+/*=========================================
+TRACK
+=========================================*/
+
+.partners-track{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:90px;
+
+    width:max-content;
+
+    animation:partnersScroll 70s linear infinite;
+
+}
+
+.partners-slider:hover .partners-track{
+
+    animation-play-state:paused;
+
+}
+
+/*=========================================
+LOGOS
+=========================================*/
+
+.partner-logo{
+
+    flex:0 0 180px;
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:15px;
+
+    box-sizing:border-box;
+
+}
+
+.partner-logo img{
+
+    max-width:140px;
+
+    max-height:55px;
+
+    width:auto;
+
+    height:auto;
+
+    object-fit:contain;
+
+    filter:grayscale(100%);
+
+    opacity:.90;
+
+    transition:.35s;
+
+}
+
+.partner-logo:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.partner-logo:hover img{
+
+    filter:none;
+
+    opacity:1;
+
+    transform:scale(1.03);
+
+}
+
+/*=========================================
+ANIMACION
+=========================================*/
+
+@keyframes partnersScroll{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+/*=========================================
+RESPONSIVE
+=========================================*/
+
+@media(max-width:991px){
+
+    #partners{
+
+        padding:90px 0;
+
+    }
+
+    #partners .section-title{
+
+        font-size:40px;
+
+    }
+
+    .partners-track{
+
+        gap:45px;
+
+    }
+
+    .partner-logo{
+
+        min-width:150px;
+
+    }
+
+}
+
+@media(max-width:767px){
+
+    #partners{
+
+        padding:80px 0;
+
+    }
+
+    #partners .section-title{
+
+        font-size:34px;
+
+    }
+
+    .partners-track{
+
+        gap:35px;
+
+    }
+
+    .partner-logo{
+
+        min-width:130px;
+
+    }
+
+    .partner-logo img{
+
+        max-width:120px;
+
+    }
+
+}
