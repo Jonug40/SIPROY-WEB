@@ -1,0 +1,277 @@
+/*==================================================
+VALUES PREMIUM
+==================================================*/
+
+#values{
+
+    padding:120px 0;
+
+    background:#FFFFFF;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/*=========================================
+CABECERA
+=========================================*/
+
+#values .section-title{
+
+    font-size:54px;
+
+    font-weight:800;
+
+    color:#071C36;
+
+    line-height:1.15;
+
+    margin:22px 0;
+
+}
+
+#values .section-description{
+
+    max-width:760px;
+
+    margin:auto;
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    color:#5E6775;
+
+}
+
+/*=========================================
+GRID
+=========================================*/
+
+#values .row.g-4{
+
+    margin-top:60px !important;
+
+}
+
+/*=========================================
+CARD
+=========================================*/
+
+.value-card{
+
+    height:100%;
+
+    background:#FFFFFF;
+
+    border:1px solid #EEF2F7;
+
+    border-radius:24px;
+
+    padding:45px;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(7,28,54,.05);
+
+}
+
+.value-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 60px rgba(7,28,54,.12);
+
+}
+
+/*=========================================
+ICONO
+=========================================*/
+
+.value-icon{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:18px;
+
+    background:#F8FAFC;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:28px;
+
+    transition:.35s;
+
+}
+
+.value-icon i{
+
+    font-size:34px;
+
+    color:#0D3B73;
+
+    transition:.35s;
+
+}
+
+.value-card:hover .value-icon{
+
+    background:#F5B21A;
+
+}
+
+.value-card:hover .value-icon i{
+
+    color:#FFFFFF;
+
+}
+
+/*=========================================
+TEXTOS
+=========================================*/
+
+.value-card h3{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#071C36;
+
+    margin-bottom:18px;
+
+}
+
+.value-card p{
+
+    margin:0;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#5E6775;
+
+}
+
+/*=========================================
+CIERRE
+=========================================*/
+
+.values-closing{
+
+    margin-top:90px;
+
+    text-align:center;
+
+}
+
+.values-closing i{
+
+    font-size:52px;
+
+    color:#F5B21A;
+
+}
+
+.values-closing p{
+
+    margin:25px auto;
+
+    max-width:720px;
+
+    font-size:28px;
+
+    line-height:1.7;
+
+    color:#4B5563;
+
+    font-style:italic;
+
+}
+
+.values-closing h5{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#071C36;
+
+}
+
+/*=========================================
+RESPONSIVE
+=========================================*/
+
+@media(max-width:991px){
+
+    #values{
+
+        padding:90px 0;
+
+    }
+
+    #values .section-title{
+
+        font-size:40px;
+
+    }
+
+    .value-card{
+
+        padding:35px;
+
+    }
+
+}
+
+@media(max-width:767px){
+
+    #values .section-title{
+
+        font-size:34px;
+
+    }
+
+    .value-card{
+
+        text-align:center;
+
+        padding:30px;
+
+    }
+
+    .value-icon{
+
+        margin:0 auto 25px;
+
+    }
+
+    .value-card h3{
+
+        font-size:26px;
+
+    }
+
+    .value-card p{
+
+        font-size:17px;
+
+    }
+
+    .values-closing p{
+
+        font-size:22px;
+
+    }
+
+}
