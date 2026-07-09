@@ -1,0 +1,245 @@
+/*==================================================
+RESPONSIVE MASTER
+SIPROY
+Versión 2.0
+==================================================*/
+
+
+/*==================================================
+LAPTOPS Y TABLETS GRANDES
+(< 1200px)
+==================================================*/
+
+@media (max-width:1199.98px){
+
+    /*=========================================
+    NAVBAR
+    =========================================*/
+
+    .navbar-collapse{
+        margin-top:12px;
+        padding:14px 18px;
+        border-radius:18px;
+        background:rgba(7,28,54,.18);
+        backdrop-filter:blur(18px);
+        -webkit-backdrop-filter:blur(18px);
+    }
+
+    .navbar-nav{
+        align-items:flex-start;
+        text-align:left;
+    }
+
+    .navbar-nav .nav-link{
+        margin:10px 0;
+        margin-left:0;
+    }
+
+    /* El botón ya existe en el Hero */
+    .navbar-nav .btn-siproy{
+        display:none;
+    }
+}
+
+
+/*==================================================
+TABLETS
+(< 992px)
+==================================================*/
+
+@media (max-width:991.98px){
+    /*=========================================
+    NAVBAR
+    =========================================*/
+    .navbar{
+        padding:12px 0;
+    }
+
+    .logo{
+        width:52px;
+    }
+
+    .brand h3{
+        font-size:1.9rem;
+    }
+
+    .brand p{
+        font-size:.75rem;
+    }
+
+    .navbar-toggler{
+        border:1px solid rgba(255,255,255,.18);
+        background:rgba(255,255,255,.05);
+        border-radius:12px;
+        padding:.55rem .75rem;
+    }
+
+    .navbar-toggler:hover{
+        background:rgba(255,255,255,.10);
+    }
+
+    .navbar-toggler:focus{
+        box-shadow:none;
+    }
+
+    .navbar-toggler-icon{
+        filter:brightness(0) invert(1);
+    }
+}
+
+
+/*==================================================
+MÓVILES
+(< 768px)
+==================================================*/
+
+@media (max-width:767.98px){
+    /*=========================================
+    NAVBAR
+    =========================================*/
+    .logo{
+        width:48px;
+    }
+
+    .brand h3{
+        font-size:1.75rem;
+    }
+
+    .brand p{
+        font-size:.70rem;
+    }
+
+    /*=========================================
+    ABOUT
+    =========================================*/
+    .about-image{
+        position:relative;
+    }
+
+    .about-card{
+        position:relative !important;
+        top:auto !important;
+        left:auto !important;
+        right:auto !important;
+        bottom:auto !important;
+        width:85%;
+        margin:24px auto 0;
+        transform:none !important;
+    }
+
+    .about-card h3{
+        font-size:2rem;
+    }
+
+    .about-card span{
+        font-size:1rem;
+    }
+
+    .about-title,
+
+    .about-text{
+        text-align:center;
+    }
+
+
+/*=========================================
+FOOTER
+=========================================*/
+
+    .footer-brand{
+        text-align:center;
+    }
+
+    .footer-brand img{
+        width:145px;
+        max-width:100%;
+        display:block;
+        margin:0 auto 25px;
+    }
+
+    .footer-description{
+        text-align:center;
+        max-width:340px;
+        margin:0 auto 25px;
+    }
+
+    .footer-social{
+        justify-content:center;
+        margin-bottom:45px;
+    }
+
+    .footer-title{
+        text-align:center;
+        margin-top:28px;
+    }
+
+    .footer-links{
+        text-align:center;
+        padding-left:0;
+    }
+
+    .footer-contact{
+        padding-left:0;
+    }
+
+    .footer-contact li{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .footer-bottom{
+        text-align:center;
+    }
+}
+
+
+/*==================================================
+CELULARES
+(< 576px)
+==================================================*/
+
+@media (max-width:575.98px){
+    /*=========================================
+    HERO
+    =========================================*/
+
+    .hero-left{
+        text-align:center;
+    }
+
+    .hero-left h1{
+        font-size:2.8rem;
+        line-height:.95;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+}
+
+
+/*==================================================
+CELULARES PEQUEÑOS
+(< 360px)
+==================================================*/
+
+@media (max-width:359.98px){
+    .hero-left h1{
+        font-size:2.4rem;
+        line-height:1;
+    }
+
+    .logo{
+        width:44px;
+    }
+
+    .brand h3{
+        font-size:1.5rem;
+    }
+
+    .brand p{
+        font-size:.65rem;
+    }
+}

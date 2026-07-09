@@ -3,45 +3,29 @@ NAVBAR
 ==================================================*/
 
 #navbar{
-
+    align-items:flex-start;
+    padding-left:18px;
     position:fixed;
-
     top:0;
-
     left:0;
-
     width:100%;
-
     z-index:1000;
-
     padding:20px 0;
-
     background:rgba(7,28,54,.15);
-
     backdrop-filter:blur(12px);
-
     -webkit-backdrop-filter:blur(12px);
-
     transition:all .35s ease;
-
 }
 
 /*=========================================
 NAVBAR AL HACER SCROLL
 =========================================*/
-
 #navbar.scrolled{
-
     background:rgba(7,28,54,.92);
-
     backdrop-filter:blur(18px);
-
     -webkit-backdrop-filter:blur(18px);
-
     box-shadow:0 10px 35px rgba(0,0,0,.28);
-
     padding:14px 0;
-
 }
 
 /*=========================================
@@ -49,17 +33,12 @@ LOGO
 =========================================*/
 
 .logo{
-
     width:60px;
-
     transition:all .35s ease;
-
 }
 
 #navbar.scrolled .logo{
-
     width:54px;
-
 }
 
 /*=========================================
@@ -67,29 +46,18 @@ MARCA
 =========================================*/
 
 .brand h3{
-
     color:#FFFFFF;
-
     font-size:34px;
-
     font-weight:800;
-
     margin:0;
-
     line-height:1;
-
 }
 
 .brand p{
-
     color:#D7DEE8;
-
     margin:0;
-
     font-size:13px;
-
     letter-spacing:.3px;
-
 }
 
 /*=========================================
@@ -97,21 +65,14 @@ MENÚ
 =========================================*/
 
 .nav-link{
-
     color:#FFFFFF !important;
-
     font-weight:600;
-
     margin-left:18px;
-
     transition:all .30s ease;
-
 }
 
 .nav-link:hover{
-
     color:#F5B21A !important;
-
 }
 
 /*=========================================
@@ -119,49 +80,44 @@ BOTÓN PRINCIPAL
 =========================================*/
 
 .btn-siproy{
-
     background:#F5B21A;
-
     color:#071C36;
-
     border:none;
-
     border-radius:50px;
-
     padding:14px 30px;
-
     font-weight:700;
-
     transition:all .35s ease;
-
 }
 
 .btn-siproy:hover{
-
     background:#FFD15C;
-
     color:#071C36;
-
     transform:translateY(-3px);
-
     box-shadow:0 15px 35px rgba(245,178,26,.40);
-
 }
 
 #navbar::after{
-
     content:"";
-
     position:absolute;
-
     left:0;
-
     bottom:0;
-
     width:100%;
-
     height:1px;
-
     background:rgba(245,178,26,.18);
+}
+
+.navbar-collapse{
+
+    margin-top:10px;
+
+    padding:12px 0;
+
+    background:rgba(7,28,54,.18);
+
+    backdrop-filter:blur(14px);
+
+    -webkit-backdrop-filter:blur(14px);
+
+    border-radius:18px;
 
 }

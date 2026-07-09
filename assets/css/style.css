@@ -7,83 +7,61 @@ Versión 1.0
 :root{
 
     /* Colores */
-
     --primary:#0D3B73;
     --primary-dark:#071C36;
     --secondary:#1D5EA8;
     --accent:#F5B21A;
-
     --white:#FFFFFF;
     --light:#F6F8FC;
     --text:#2E3A46;
     --gray:#7B8794;
 
     /* Tipografía */
-
     --font:'Poppins',sans-serif;
-
     /* Espaciados */
-
     --section:120px;
-
     /* Bordes */
-
     --radius:20px;
-
     /* Sombras */
-
     --shadow:0 15px 40px rgba(0,0,0,.10);
-
     /* Transiciones */
-
     --transition:.35s;
-
 }
 
 *{
-
     margin:0;
-
     padding:0;
-
     box-sizing:border-box;
-
 }
 
 html{
-
     scroll-behavior:smooth;
-
 }
 
 body{
-
     font-family:var(--font);
-
     color:var(--text);
-
     background:#fff;
-
     overflow-x:hidden;
-
 }
 
 section{
-
     padding:var(--section) 0;
-
 }
 
 img{
-
     max-width:100%;
-
     display:block;
-
 }
 
 a{
-
     text-decoration:none;
+}
 
+/*==================================================
+SMOOTH SCROLL
+==================================================*/
+
+html{
+    scroll-behavior:smooth;
 }

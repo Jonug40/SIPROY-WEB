@@ -1,0 +1,231 @@
+/*==================================================
+FOOTER PREMIUM
+==================================================*/
+
+#footer{
+    position:relative;
+    padding:90px 0 35px;
+    background:#071C36;
+    overflow:hidden;
+}
+
+/*=========================================
+LÍNEA SUPERIOR
+=========================================*/
+
+#footer::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:15%;
+    width:70%;
+    height:2px;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #F5B21A,
+        transparent
+    );
+}
+
+/*=========================================
+CONTENIDO
+=========================================*/
+
+.footer-content{
+    padding-bottom:55px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+/*=========================================
+LOGO
+=========================================*/
+
+.footer-brand img{
+    max-width:240px;
+    margin-bottom:28px;
+}
+
+.footer-description{
+    color:rgba(255,255,255,.72);
+    font-size:17px;
+    line-height:1.9;
+    margin-bottom:30px;
+}
+
+/*=========================================
+REDES
+=========================================*/
+
+.footer-social{
+    display:flex;
+    gap:15px;
+}
+
+.footer-social a{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(255,255,255,.06);
+    color:#FFFFFF;
+    text-decoration:none;
+    transition:.35s;
+}
+
+.footer-social a:hover{
+    background:#F5B21A;
+    color:#071C36;
+    transform:translateY(-5px);
+}
+
+/*=========================================
+TÍTULOS
+=========================================*/
+
+.footer-title{
+    color:#FFFFFF;
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:28px;
+}
+
+/*=========================================
+LINKS
+=========================================*/
+
+.footer-links{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.footer-links li{
+    margin-bottom:15px;
+}
+
+.footer-links a{
+    color:rgba(255,255,255,.72);
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#F5B21A;
+    padding-left:6px;
+}
+
+.footer-links li{
+    color:rgba(255,255,255,.72);
+}
+
+/*=========================================
+CONTACTO
+=========================================*/
+
+.footer-contact{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.footer-contact li{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+    margin-bottom:20px;
+    color:rgba(255,255,255,.72);
+    line-height:1.7;
+}
+
+.footer-contact i{
+    color:#F5B21A;
+    font-size:18px;
+    margin-top:3px;
+}
+
+/*=========================================
+COPYRIGHT
+=========================================*/
+
+.footer-bottom{
+    padding-top:30px;
+    text-align:center;
+}
+
+.footer-bottom p{
+    margin:6px 0;
+    color:rgba(255,255,255,.55);
+    font-size:15px;
+}
+
+.footer-bottom strong{
+    color:#FFFFFF;
+}
+
+/*=========================================
+EFECTO DECORATIVO
+=========================================*/
+
+#footer::after{
+    content:"";
+    position:absolute;
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    right:-180px;
+    bottom:-180px;
+    background:rgba(245,178,26,.05);
+}
+
+/*=========================================
+HOVER EN COLUMNAS
+=========================================*/
+
+.footer-brand,
+.footer-links,
+.footer-contact{
+    transition:.35s;
+}
+
+.footer-brand:hover,
+.footer-links:hover,
+.footer-contact:hover{
+    transform:translateY(-4px);
+}
+
+/*=========================================
+RESPONSIVE
+=========================================*/
+
+@media(max-width:991px){
+
+    #footer{
+        text-align:center;
+    }
+
+    .footer-social{
+        justify-content:center;
+    }
+
+    .footer-contact li{
+        justify-content:center;
+        text-align:left;
+    }
+}
+
+@media(max-width:767px){
+    #footer{
+        padding:70px 0 30px;
+    }
+
+    .footer-title{
+        margin-top:20px;
+    }
+
+    .footer-brand img{
+        max-width:200px;
+    }
+}

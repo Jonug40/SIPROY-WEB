@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await loadComponent("values-container", "components/values.html");
 
-  //  await loadComponent("cta-container", "components/cta.html");
+    await loadComponent("cta-container", "components/cta.html");
 
-  //  await loadComponent("footer-container", "components/footer.html");
+    await loadComponent("footer-container", "components/footer.html");
 
 });
 
