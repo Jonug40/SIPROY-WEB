@@ -42,7 +42,7 @@ LOGO
 =========================================*/
 
 .footer-brand img{
-    max-width:240px;
+    max-width:180px;
     margin-bottom:28px;
 }
 
@@ -119,6 +119,11 @@ LINKS
 
 .footer-links li{
     color:rgba(255,255,255,.72);
+}
+
+.footer-links a:focus{
+    outline:2px solid #F5B21A;
+    outline-offset:4px;
 }
 
 /*=========================================
@@ -229,3 +234,4 @@ RESPONSIVE
         max-width:200px;
     }
 }
+

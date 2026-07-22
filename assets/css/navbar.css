@@ -3,17 +3,15 @@ NAVBAR
 ==================================================*/
 
 #navbar{
-    align-items:flex-start;
-    padding-left:18px;
     position:fixed;
     top:0;
     left:0;
     width:100%;
     z-index:1000;
     padding:20px 0;
-    background:rgba(7,28,54,.15);
-    backdrop-filter:blur(12px);
-    -webkit-backdrop-filter:blur(12px);
+    background:rgba(7,28,54,.65);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
     transition:all .35s ease;
 }
 
@@ -21,7 +19,7 @@ NAVBAR
 NAVBAR AL HACER SCROLL
 =========================================*/
 #navbar.scrolled{
-    background:rgba(7,28,54,.92);
+    background:rgba(7,28,54,.72);
     backdrop-filter:blur(18px);
     -webkit-backdrop-filter:blur(18px);
     box-shadow:0 10px 35px rgba(0,0,0,.28);
@@ -76,6 +74,35 @@ MENÚ
 }
 
 /*=========================================
+LINK ACTIVO
+=========================================*/
+.nav-link.active{
+    color:#F5B21A !important;
+}
+
+.nav-link{
+    position:relative;
+}
+
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:-8px;
+    width:0;
+    height:3px;
+    background:#F5B21A;
+    border-radius:20px;
+    transform:translateX(-50%);
+    transition:width .35s ease;
+}
+
+.nav-link.active::after{
+    width:24px;
+}
+
+
+/*=========================================
 BOTÓN PRINCIPAL
 =========================================*/
 
@@ -106,6 +133,7 @@ BOTÓN PRINCIPAL
     background:rgba(245,178,26,.18);
 }
 
+/*
 .navbar-collapse{
 
     margin-top:10px;
@@ -120,4 +148,4 @@ BOTÓN PRINCIPAL
 
     border-radius:18px;
 
-}
+}*/
