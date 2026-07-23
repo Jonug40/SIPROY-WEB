@@ -1,0 +1,32 @@
+/*==================================================
+SIPROY UI
+WhatsApp Floating Button
+==================================================*/
+
+#whatsappFloat{
+    position:fixed;
+    right:35px;
+    bottom:35px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#25D366;
+    color:#FFFFFF;
+    font-size:1.6rem;
+    text-decoration:none;
+    box-shadow:0 12px 30px rgba(37,211,102,.35);
+    transition:
+    transform .30s ease,
+    box-shadow .30s ease,
+    background .30s ease;
+    z-index:9998;
+}
+
+#whatsappFloat:hover{
+    color:#FFFFFF;
+    transform:translateY(-3px) scale(1.04);
+    box-shadow:0 12px 28px rgba(37,211,102,.35);
+}

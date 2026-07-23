@@ -100,6 +100,7 @@ document.addEventListener("DOMContentLoaded", async()=>{
     if (typeof window.initContactForm === "function") {
         window.initContactForm();
     };
+    await loadComponent("whatsapp-container","components/whatsapp.html");
     await loadComponent("footer-container","components/footer.html");
     /* Inicializar todos los módulos */
     initApp();
