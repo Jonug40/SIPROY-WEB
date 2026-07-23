@@ -17,7 +17,13 @@ CABECERA
     font-weight:800;
     color:#071C36;
     line-height:1.15;
-    margin:20px 0;
+    margin-top:0;
+    margin-bottom:20px;
+}
+
+#clients .section-subtitle{
+    display:inline-block;
+    margin-bottom:15px;
 }
 
 #clients .section-description{

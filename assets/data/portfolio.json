@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "title": "Implementación de Red Empresarial",
+    "client": "Laboratorios Elifarma",
+    "category": "Redes",
+    "image": "assets/img/portfolio/redes-elifarma.webp",
+    "summary": "Diseño e implementación de infraestructura LAN con segmentación VLAN y conectividad de alta disponibilidad.",
+    "technologies": [
+      "Cisco",
+      "Fortinet",
+      "Cat6",
+      "Fibra Óptica"
+    ],
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Sistema de Videovigilancia",
+    "client": "Empresa Industrial",
+    "category": "CCTV",
+    "image": "assets/img/portfolio/cctv-industrial.webp",
+    "summary": "Implementación de cámaras IP, grabación centralizada y acceso remoto seguro.",
+    "technologies": [
+      "Hikvision",
+      "NVR",
+      "PoE"
+    ],
+    "featured": false
+  },
+  {
+    "id": 3,
+    "title": "Virtualización de Servidores",
+    "client": "Centro Empresarial",
+    "category": "Servidores",
+    "image": "assets/img/portfolio/servidores.webp",
+    "summary": "Migración de servidores físicos a infraestructura virtual con alta disponibilidad.",
+    "technologies": [
+      "VMware",
+      "Windows Server",
+      "Dell"
+    ],
+    "featured": true
+  },
+  {
+    "id": 4,
+    "title": "Telefonía IP Corporativa",
+    "client": "Empresa Comercial",
+    "category": "Telefonía IP",
+    "image": "assets/img/portfolio/telefonia.webp",
+    "summary": "Implementación de central telefónica IP con extensiones internas y acceso remoto.",
+    "technologies": [
+      "Asterisk",
+      "Yealink",
+      "SIP"
+    ],
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Infraestructura Cloud",
+    "client": "Empresa de Servicios",
+    "category": "Cloud",
+    "image": "assets/img/portfolio/cloud.webp",
+    "summary": "Implementación de servidores en la nube con respaldo automatizado y monitoreo.",
+    "technologies": [
+      "Google Cloud",
+      "Linux",
+      "Docker"
+    ],
+    "featured": true
+  },
+  {
+    "id": 6,
+    "title": "Implementación de Firewall",
+    "client": "Corporación Nacional",
+    "category": "Ciberseguridad",
+    "image": "assets/img/portfolio/firewall.webp",
+    "summary": "Protección perimetral con políticas de seguridad, VPN y filtrado de contenido.",
+    "technologies": [
+      "Fortinet",
+      "VPN",
+      "IPS"
+    ],
+    "featured": false
+  }
+]

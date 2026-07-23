@@ -7,11 +7,10 @@ PORTFOLIO
         <div class="row reveal">
             <div class="col-lg-8 mx-auto text-center">
                 <span class="section-subtitle">
-                    NUESTRO PORTAFOLIO
+                    NUESTROS PROYECTOS
                 </span>
                 <h2 class="section-title">
-                    Casos de éxito que respaldan
-                    nuestra experiencia
+                    Proyectos que impulsan la transformación tecnológica
                 </h2>
                 <p class="section-description">
                     Descubre algunos de los proyectos desarrollados por SIPROY en
@@ -23,8 +22,8 @@ PORTFOLIO
 
         <!-- Filtros -->
         <div class="portfolio-filters reveal">
-            <button class="active" data-filter="all">
-                Todos
+            <button class="active" data-filter="infraestructura">
+                Infraestructura
             </button>
             <button data-filter="redes">
                 Redes
@@ -47,49 +46,38 @@ PORTFOLIO
         <div id="portfolio-grid" class="portfolio-grid">
             <article class="portfolio-card reveal">
                 <div class="portfolio-image">
-                    <img
+                    <img id="project-image"
                         src="assets/img/portfolio/demo.webp"
-                        alt="Proyecto de infraestructura tecnológica">
-                    <span class="portfolio-category">
-                        Redes Empresariales
-                    </span>
+                        alt="Proyecto SIPROY">
                 </div>
                 <div class="portfolio-content">
-                    <h3>
-                        Modernización de Infraestructura Tecnológica
+                    <!--<span id="project-category" class="portfolio-category">
+                        Redes Empresariales
+                    </span>-->
+                    <h3 id="project-title">
+                        Centro de Datos e Infraestructura Empresarial
                     </h3>
-                    <p>
-                        Renovación completa de la infraestructura de red,
-                        implementación de racks, switches administrables,
-                        cableado estructurado y segmentación de red.
+                    <p id="project-description">
+                        Diseño e implementación integral de la infraestructura 
+                        tecnológica de la empresa, incluyendo racks, servidores, 
+                        almacenamiento, energía, cableado estructurado y 
+                        comunicaciones para garantizar alta disponibilidad y crecimiento futuro.
                     </p>
-                    <div class="portfolio-meta">
-                        <div class="meta-item">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <span>Lima, Perú</span>
-                        </div>
-
-                        <div class="meta-item">
-                            <i class="bi bi-calendar-event"></i>
-                            <span>2026</span>
-                        </div>
-
-                        <div class="meta-item">
-                            <i class="bi bi-clock-history"></i>
-                            <span>7 días</span>
-                        </div>
-
-                    </div>
-                    <div class="portfolio-tags">
-                        <span>Cat6</span>
-                        <span>Switches</span>
+                    <div id="project-tags" class="portfolio-tags">
                         <span>Rack</span>
+                        <span>UPS</span>
+                        <span>NAS</span>
+                        <span>Cableado</span>
+                        <span>Virtualización</span>
                     </div>
-                    <div class="portfolio-footer">
-                        <a href="#" class="portfolio-link">
-                            Ver Caso de Éxito
-                            <i class="bi bi-arrow-right-circle-fill"></i>
-                        </a>
+                    <div class="portfolio-results">
+                        <h5>Resultados obtenidos</h5>
+                        <ul id="project-results">
+                            <li>Centro de datos centralizado</li>
+                            <li>Alta disponibilidad de la red</li>
+                            <li>Infraestructura escalable</li>
+                            <li>Mayor continuidad operativa</li>
+                        </ul>
                     </div>
                 </div>
             </article>
